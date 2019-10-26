@@ -7,7 +7,14 @@
         mc:Ignorable="d"
         Title="WebParser" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="189" Margin="27,23,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="199" Grid.Column="2"/>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Right" Margin="0,153,347,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.65,0.419" IsCancel="True" Click="StartButton_Click" Height="20"/>
+        <Button Content="Stop" HorizontalAlignment="Right" Margin="0,153,231,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Height="20"/>
+        <TextBox x:Name="tbStart" HorizontalAlignment="Right" Height="23" Margin="0,42,302,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbAbort" Height="23" Margin="0,90,302,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120"/>
+        <ListBox x:Name="lbTitles" Margin="10,10,427,10"/>
 
     </Grid>
 </Window>
